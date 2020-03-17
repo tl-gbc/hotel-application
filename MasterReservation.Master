@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterReservation.Master.cs" Inherits="RoyalInnSuites.Reservation" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 130px;
+        }
+        .auto-style3 {
+            width: 133px;
+        }
+        .auto-style4 {
+            width: 157px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <img alt="Royal Inn and Suites " src="Images/logo.png" />
+        </div>        
+        
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+            <p>&copy; <asp:Label ID="lblYear" runat="server"></asp:Label> 
+                Royal Inns and Suites</p>
+        </footer>
+    </form>
+</body>
+</html>
